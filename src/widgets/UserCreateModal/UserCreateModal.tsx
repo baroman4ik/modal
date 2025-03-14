@@ -14,7 +14,9 @@ export const UserCreateModal: React.FC = () => {
   }
 
   return (
-    <ModalWindow trigger={(open) => <Button onClick={open}>Open Modal</Button>}>
+    <ModalWindow
+      trigger={(open) => <Button onClick={open}>Открыть модалку</Button>}
+    >
       <ModalWindow.Header>Создание юзера</ModalWindow.Header>
       <ModalWindow.Body>
         <CreateUserForm onSubmit={handleCreateUser} />

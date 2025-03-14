@@ -12,7 +12,6 @@ import {
 } from '@/shared/ui/dialog'
 import { Button } from '@/shared/ui/button'
 
-// Контекст для управления модальным окном
 const ModalContext = createContext<{ close: () => void } | undefined>(undefined)
 
 const useModal = () => {
